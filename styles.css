@@ -4,3 +4,125 @@
     box-sizing: border-box;
     font-family: calibri;
 }
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #a3f291;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hex-code-el{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.changeColor-btn{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 30px 0;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+.changeColor-btn:hover{
+    background: rgba(0, 0, 0, 0);
+    color: #050801;
+    box-shadow: 0 0 5px #000000,
+                0 0 25px #fff,
+                0 0 50px #000000,
+                0 0 200px #fff,
+                inset 0 0 5px 50px white;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #000000);
+}
+.changeColor-btn:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+.changeColor-btn:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.changeColor-btn span{
+    position: absolute;
+    display: block;
+}
+.changeColor-btn span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#fff);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.changeColor-btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#000);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.changeColor-btn span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#fff);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.changeColor-btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#000);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
