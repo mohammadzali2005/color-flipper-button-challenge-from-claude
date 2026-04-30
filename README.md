@@ -1,4 +1,4 @@
-#Color Flipper Button Challenge
+# Color Flipper Button Challenge
 A simple and modern JavaScript challenge / project that generates random HEX colors and changes the background of the page with a smooth visual experience. 
 
 ## Overview 
@@ -12,7 +12,7 @@ Each time you click the button, a random HEX color is generated and applied as t
 - Text adaption based on HEX color
 
 ## 🔗 How to see it live
-[]()
+[Live Demo](https://mohammadzali2005.github.io/color-flipper-button-challenge-from-claude/)
 
 ## Technologies used
 - HTML
